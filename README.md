@@ -185,7 +185,23 @@ if __name__ == "__main__":
 Desarrollar un programa que determine si en una lista se encuentra
 una cadena de caracteres con dos o más vocales. Si la cadena existe debe imprimirla y si no existe debe imprimir 'No existe'.
 ```python
+def vocales(cadena):
+    vocales = "A a E e I i O o U u"
+    contador = 0
+    for letra in cadena:
+        if letra in vocales:
+            contador += 1
+        if contador >= 2:
+          return True
 
+if __name__ == "__main__":
+   palabras = input("Ingrese palabras separadas por un espacio: ")
+   cadenas = palabras.split()
+   for cadena in cadenas:
+    if vocales(cadena):
+      print(cadena)
+    else:
+      print("No existe")
 ```
 # Punto 8
 Desarrollar un programa que dadas dos listas determine que elementos tiene la primer lista que no tenga la segunda lista. 
