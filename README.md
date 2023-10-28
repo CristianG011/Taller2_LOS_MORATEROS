@@ -1,4 +1,5 @@
 # LOS MORATEROS (EL MEJOR GRUPO) PRESENTA...
+Una producción de: Cristian Andres Gómez, juan Estaban Molina y Paula Isabella Moreno
 # TALLER 2
 ![395309186_861858485377350_369559280493977603_n](https://github.com/CristianG011/Taller2_LOS_MORATEROS/assets/142249435/24a2c97f-7e82-4b2a-9dfc-f402bef839fe)
 # Punto 1
