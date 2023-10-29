@@ -291,8 +291,8 @@ def multiplos_3():       #Definimos la función para calcular los múltiplos de 
     lista = []           #Creamos la lista donde irán todos los números ingresados
     while True:
         entrada = input("Ingrese un número entero para el primer arreglo (Vacío para terminar): ")
-        if not entrada:  #Si dejan de ingresarse números por computadora
-            break        #Deja de mostrar mensaje
+        if not entrada:          #Si dejan de ingresarse números por computadora
+            break                #Deja de mostrar mensaje
         numeros = int(entrada)   #Convierte los números a enteros
         lista.append(numeros)    #Agregamos los números ingresados a la lista
 
