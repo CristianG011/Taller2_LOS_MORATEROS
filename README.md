@@ -171,12 +171,12 @@ if __name__ == "__main__":
     lista = []                     #Creamos la lista donde irán los números
     while True:
         entrada = input("Ingrese un número entero para el primer arreglo (Vacío para terminar): ")
-        if not entrada:
-            break
-        numeros = int(entrada)
+        if not entrada:            #Cuando dejen de ingresarse números por computadora
+            break                  #Deja de mostrar mensaje 
+        numeros = int(entrada)     #Los números ingresados se convierten a entero
         lista.append(numeros)      #Agregamos los números ingresados a la lista
 
-    if elementos_repetidos(lista):
+    if elementos_repetidos(lista): 
         print("Hay elementos repetidos")
     else:
         print("No hay elementos repetidos")
@@ -287,19 +287,19 @@ Suponga que se tiene una lista A con ciertos números enteros. Desarrolle una fu
 ```python
 #Comprensión de listas
 
-def multiplos_3():      #Definimos la función para calcular los múltiplos de 3
-    lista = []          #Creamos la lista donde irán todos los números ingresados
+def multiplos_3():       #Definimos la función para calcular los múltiplos de 3
+    lista = []           #Creamos la lista donde irán todos los números ingresados
     while True:
         entrada = input("Ingrese un número entero para el primer arreglo (Vacío para terminar): ")
-        if not entrada:
-            break
-        numeros = int(entrada)
+        if not entrada:  #Si dejan de ingresarse números por computadora
+            break        #Deja de mostrar mensaje
+        numeros = int(entrada)   #Convierte los números a enteros
         lista.append(numeros)    #Agregamos los números ingresados a la lista
 
-    return lista
+    return lista            
 
 if __name__ == "__main__":
-    lista = multiplos_3()
+    lista = multiplos_3()       
 
     lista_multiplos = []                #Creamos otra lista donde irán los múltiplos de 3
     for i in lista:                     #Para cada valor i en la lista
@@ -320,9 +320,9 @@ def multiplos_3():        #Definimos la función para encontrar múltiplos de 3
     lista = []            #Creamos la lista donde irán los números ingresados
     while True:
         entrada = input("Ingrese un número entero para el primer arreglo (Vacío para terminar): ")
-        if not entrada:
-            break
-        numeros = int(entrada)
+        if not entrada:             #Si dejan de ingresarse números por computadora 
+            break                   #Deja de mostrar mensaje
+        numeros = int(entrada)      #Convierte los números ingresados a enteros
         lista.append(numeros)       #Se agregan los números a la lista
     return lista
 
