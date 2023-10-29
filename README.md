@@ -126,9 +126,9 @@ def calcular_mcm(a, b):           #Definimos función para calcular mínimo com�
     multiplicacion = a * b        #Multiplicamos los dos números ingresados
 
     while b > 0:                  #Algoritmo de euclides para sacar el máximo común divisor
-        residuo = a % b
-        a = b
-        b = residuo
+        residuo = a % b           
+        a = b                     #El divisor b pasa a ser el dividendo a 
+        b = residuo               #El residuo ahora será el divisor b
 
     mcd = a
     mcm = multiplicacion / mcd    #El mínimo común múltiplo equivale a la multiplicación de los valores ingresados sobre el máximo común divisor
