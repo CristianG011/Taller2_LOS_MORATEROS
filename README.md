@@ -19,8 +19,8 @@ def digitos(n):                   #Definimos la función para separar los dígit
 
 if __name__ == "__main__":
     n = int(input("Ingrese un número entero: "))
-    digitos = digitos(n)
-    print("Los dígitos del número dado son: ")
+    digitos = digitos(n)          #LLama a la función antes definida
+    print("Los dígitos del número dado son: ")  #Imprime la lista con los dígitos
     print(digitos)
 ```
 # Punto 2
@@ -54,9 +54,9 @@ def digitos_flotantes():
         lista2 = [0]                      #Si la lista está vacía devuelve el valor 0
 
 
-    print("Los dígitos de la parte entera son:")
+    print("Los dígitos de la parte entera son:")       #Imprime lista de dígitos de enteros
     print(lista1[::-1])
-    print("Los dígitos de la parte decimal son:")
+    print("Los dígitos de la parte decimal son:")      #Imprime lista de dígitos de decimales
     print(lista2)
 
 if __name__ == "__main__":
@@ -87,8 +87,8 @@ def numeros_espejo(a, b):         #Definimos la función para hallar números es
 if __name__ == "__main__":
     a = int(input("Ingrese un número entero: "))
     b = int(input("Ingrese otro número entero: "))
-    numeros_espejo = numeros_espejo(a, b)
-    print(numeros_espejo)
+    numeros_espejo = numeros_espejo(a, b)                        #LLama a la función antes definida
+    print(numeros_espejo)                                        #Imprime el mensaje que corresponda
 
 ```
 # Punto 4
@@ -133,13 +133,13 @@ def calcular_mcm(a, b):           #Definimos función para calcular mínimo com�
     mcd = a
     mcm = multiplicacion / mcd    #El mínimo común múltiplo equivale a la multiplicación de los valores ingresados sobre el máximo común divisor
 
-    return mcm
+    return mcm                    #Retorna el mínimo común múltiplo
 
 if __name__ == "__main__":
-    a = int(input("Ingrese un número entero: "))
-    b = int(input("Ingrese otro número entero: "))
-    resultado = calcular_mcm(a, b)
-    print("El mínimo común múltiplo de los números ingresados es " + str(resultado))
+    a = int(input("Ingrese un número entero: "))                                      #Ingresa número a por computadora
+    b = int(input("Ingrese otro número entero: "))                                    #Ingresa número b por computadora
+    resultado = calcular_mcm(a, b)                                                    #Llama a la función antes definida
+    print("El mínimo común múltiplo de los números ingresados es " + str(resultado))  #Imprime el resultado de la función
 ```
 ```python
 #Forma Recursiva
@@ -155,8 +155,8 @@ def calcular_mcm(a, b):       #Definimos función para calcular el mínimo comú
 
 a = int(input("Ingrese un número entero: "))
 b = int(input("Ingrese otro número entero: "))
-mcm = calcular_mcm(a, b)
-print("El mínimo común múltiplo de los números ingresados es " + str(mcm))
+mcm = calcular_mcm(a, b)                                                      #Llama a la función antes definida
+print("El mínimo común múltiplo de los números ingresados es " + str(mcm))    #Imprime el mínimo común múltiplo de los dos números ingresados
 ```
 # Punto 6
 Desarrollar un programa que determine si en una lista existen o no elementos repetidos. **Pista:** Maneje valores booleanos y utilice el operador *in*.
@@ -296,7 +296,7 @@ def multiplos_3():       #Definimos la función para calcular los múltiplos de 
         numeros = int(entrada)   #Convierte los números a enteros
         lista.append(numeros)    #Agregamos los números ingresados a la lista
 
-    return lista            
+    return lista                 #Retorna lista
 
 if __name__ == "__main__":
     lista = multiplos_3()       
@@ -324,10 +324,10 @@ def multiplos_3():        #Definimos la función para encontrar múltiplos de 3
             break                   #Deja de mostrar mensaje
         numeros = int(entrada)      #Convierte los números ingresados a enteros
         lista.append(numeros)       #Se agregan los números a la lista
-    return lista
+    return lista                    #Retorna lista
 
 if __name__ == "__main__":
-    lista = multiplos_3()
+    lista = multiplos_3()           
 
     lista_multiplos = []                 #Se crea la lista donde irán los múltiplos de 3
     for i in lista:                      #Para cada valor i dentro de la lista
