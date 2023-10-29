@@ -187,22 +187,24 @@ Desarrollar un programa que determine si en una lista se encuentra
 una cadena de caracteres con dos o más vocales. Si la cadena existe debe imprimirla y si no existe debe imprimir 'No existe'.
 ```python
 def vocales(cadena):
-    vocales = "A a E e I i O o U u"
-    contador = 0
-    for letra in cadena:
-        if letra in vocales:
-            contador += 1
-        if contador >= 2:
-          return True
+    # Definimos una función que cuenta cuántas vocales tiene una palabra
+    vocales = "A a E e I i O o U u"     # Definimos las vocales
+    contador = 0                        # Inicializamos el contador a 0
+    for letra in cadena:                # Iteramos a través de las letras de la palabra
+        if letra in vocales:            # Si la letra es una vocal
+            contador += 1               # Incrementamos el contador en 1
+        if contador >= 2:               # Si hay al menos 2 vocales, terminamos la función
+            return True                 # La función retorna True
 
 if __name__ == "__main__":
-   palabras = input("Ingrese palabras separadas por un espacio: ")
-   cadenas = palabras.split()
-   for cadena in cadenas:
-    if vocales(cadena):
-      print(cadena)
-    else:
-      print("No existe")
+    palabras = input("Ingrese palabras separadas por un espacio: ")  # Solicitamos al usuario ingresar palabras
+    cadenas = palabras.split()          # Separamos las palabras en una lista llamada "cadenas"
+    for cadena in cadenas:              # Iteramos a través de las palabras
+        if vocales(cadena):             # Llamamos la función 'vocales' para cada palabra
+            print(cadena)               # Imprimimos las palabras que tienen 2 o más vocales
+        else:
+            print("No existe")          # Imprimimos "No existe" para las palabras que no cumplen con la condición
+
 ```
 # Punto 8
 Desarrollar un programa que dadas dos listas determine que elementos tiene la primer lista que no tenga la segunda lista. 
